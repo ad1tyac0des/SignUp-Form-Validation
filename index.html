@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="signin-container">
+            <div id="hero-text">
+                <h1>Discover Art,</h1>
+                <h3>Discover Yourself</h3>
+            </div>
+
+            <div id="bottom-text">
+                <p>Already have an account?</p>
+                <a href="#">SignIn</a>
+            </div>
+        </div>
+
+        <div id="signup-container">
+            <div id="signup-wrapper">
+                <h1>Become a Part of <br><span> Our World</span></h1>
+
+                <form autocomplete="off">
+                    <div class="input-container" id="name-container">
+                        <input type="text" placeholder="Nickname" id="name-input" required>
+                        <p class="error-text">Nickname must be atmost 2 words</p>
+                    </div>
+                    <div class="input-container" id="email-container">
+                        <input type="email" placeholder="Email" id="email-input" required>
+                        <p class="error-text" id="email-error"></p>
+                    </div>
+                    <div class="input-container" id="password-container">
+                        <div id="input-wrapper">
+                            <input type="password" placeholder="Password" id="password-input" required>
+                            <button type="button" id="toggle-btn"><i class="ri-eye-line"></i></button>
+                        </div>
+                        <p class="error-text" id="password-error">Password must be atleast 8 characters</p>
+                    </div>
+
+                    <button type="submit" id="signup-btn">Sign Up</button>
+
+                    <button type="button" id="google-btn"><i class="ri-google-fill"></i> Sign Up with Google</button>
+
+                    <p id="terms-and-conditions">By clicking Sign Up you agree with our <a href="#">privacy policy</a>
+                        and <a href="#">terms</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
